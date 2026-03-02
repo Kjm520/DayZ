@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -:*)",
+      "Bash(py --version)",
+      "Bash(py -3 --version)",
+      "Bash(py -:*)",
+      "Bash(xargs grep -l -i \"message\\\\|broadcast\")"
+    ]
+  }
+}

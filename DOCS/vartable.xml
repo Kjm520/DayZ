@@ -1,0 +1,386 @@
+{{GameCategory|dayz|Central Economy}}
+
+== db\globals.xml ==
+0 for integer, 1 for float, 2 for string
+{| class="wikitable"
+! Variable      !! Type !! Default !! Unit !! Description
+|-
+|| AnimalMaxCount
+|| Integer
+|| 200
+|| - 
+|| Maximal limit of spawned animals (not ambient) across all zones in map
+|-
+|| CleanupAvoidance
+|| Integer
+|| 100
+|| m
+|| Distance from player required for item deletion
+|-
+|| CleanupLifetimeDeadAnimal
+|| Integer
+|| 1200
+|| sec
+|| Default lifetime for dead animals
+|-
+|| CleanupLifetimeDeadInfected
+|| Integer
+|| 330
+|| sec
+|| Default lifetime for dead infected
+|-
+|| CleanupLifetimeDeadPlayer
+|| Integer
+|| 3600
+|| sec
+|| Default lifetime for dead player
+|-
+|| CleanupLifetimeDefault
+|| Integer
+|| 45
+|| sec
+|| Default lifetime for entities with no specific economy setup, but damage >= 1.0 (ie. dead)
+|-
+|| CleanupLifetimeLimit
+|| Integer
+|| 50
+|| -
+|| How many items can be deleted at once during standard cleanup
+|-
+|| CleanupLifetimeRuined
+|| Integer
+|| 330
+|| sec
+|| Default lifetime for ruined loot
+|-
+|| FlagRefreshFrequency
+|| Integer
+|| 432000
+|| sec
+|| Items lifetime will be refreshed with this frequency.
+|-
+|| FlagRefreshMaxDuration
+|| Integer
+|| 3456000
+|| sec
+|| How long the flag will be refreshing items.
+|-
+|| IdleModeCountdown
+|| Integer
+|| 60
+|| sec
+|| Activate economy idle mode on empty server after given time
+|-
+|| IdleModeStartup
+|| Integer
+|| 1
+|| -
+|| 0 to disable idle mode on server startup (will still switch on later if IdleModeCountdown is not 0)
+|-
+|| InitialSpawn
+|| Integer
+|| 100
+|| %
+|| How much loot will be spawned on server initial start (without storage).
+|-
+|| LootProxyPlacement
+|| Integer
+|| 1
+|| -
+|| Allow dispatch containers to receive the loot.
+|-
+|| RespawnAttempt
+|| Integer
+|| 2
+|| -
+|| How many attempts are performed during single item respawn
+|-
+|| RespawnLimit
+|| Integer
+|| 20
+|| - 
+|| How many items of one type can be spawned at once
+|-
+|| RespawnTypes
+|| Integer
+|| 12
+|| - 
+|| How many different types can be respawned at once
+|-
+|| RestartSpawn
+|| Integer
+|| 0
+|| %
+|| How much loot should be respawned during restart to nomimal
+|-
+|| SpawnInitial
+|| Integer
+|| 1200
+|| -
+|| How many initial test are allowed for item spawn
+|-
+|| TimeHopping
+|| Integer
+|| 60
+|| sec
+|| Penalty time for server hoppers
+|-
+|| TimeLogin
+|| Integer
+|| 15
+|| sec
+|| Default login time (max value 65536)
+|-
+|| TimeLogout
+|| Integer
+|| 15
+|| sec
+|| Default logout time (max value 65536)
+|-
+|| TimePenalty
+|| Integer
+|| 20
+|| sec
+|| Penalty time for player that is still in play session
+|-
+|| ZombieMaxCount
+|| Integer
+|| 1000
+|| -
+|| Maximal limit of spawned zombies across all zones in map
+|-
+|| ZoneSpawnDist
+|| Integer
+|| 300
+|| m
+|| Distance to invoke infected spawn in nearby zone (dynamic infected)
+|-
+|| WorldWetTempUpdate
+|| Integer
+|| 1
+|| -
+|| Allow update of wetness and temperature values on all items in the world.
+|-
+|| FoodDecay
+|| Integer
+|| 1
+|| -
+|| Allow decay on food (requires WorldWetTempUpdate set to 1).
+|-
+|| LootDamageMin
+|| Float
+|| 0
+|| % (0..1)
+|| Minimum applied damage to any item spawned through the CE.
+|-
+|| LootDamageMax
+|| Float
+|| 0
+|| % (0..1)
+|| Maximum applied damage to any item spawned through the CE.
+|-
+|| LootSpawnAvoidance
+|| Integer
+|| 50
+|| m
+|| Controling how far away a player should be from a loot group for loot to spawn inside of it (used to be hard-coded to 50)
+|}
+
+== cfgEconomyCore.xml ==
+'''cfgEconomyCore.xml''' is a configuration file located in '''.\mpmissions\your.mission'''
+
+It is used to configure classes included in the central economy, persistence backups, infected dynamic zones, CE logging, updaters and modding of other CE xml files within the mission (more information [[DayZ: Central Economy mission files modding|available here]]).
+
+=== Root Classes ===
+Root classes are parent classes of entities which will be used by the central economy. This allows you to specifically define what you want to be a part of the economy and what should stay omitted.
+
+
+'''Attributes:'''
+* '''name''' - name of entity type
+* '''reportMemoryLOD''' - default is yes, this allows to turn off console messages about missing memory LODs
+* '''act''' - sets entity type (none/character/car)
+If "act" type of entity is set to none (or is missing), the entity is considered to be loot. Make sure to properly define entities as character/car where needed since economy sets them up in a different way.
+
+
+'''Default setup:'''
+<syntaxhighlight lang="xml">
+<economycore>
+    <classes>
+<!--
+These are rootclasses to be used by economy.
+Do not forget to add attribute act="character", if root class represents character (player, infected, animal)
+Do not forget to add attribute act="car", if root class represents moveable vehicles
+-->
+        <rootclass name="DefaultWeapon" /> <!-- weapons -->
+        <rootclass name="DefaultMagazine" /> <!-- magazines -->
+        <rootclass name="HouseNoDestruct" reportMemoryLOD="no" /> <!-- houses, wrecks -->
+        <rootclass name="Inventory_Base" /> <!-- inventory items -->
+        <rootclass name="SurvivorBase" act="character" /> <!-- player characters -->
+        <rootclass name="DZ_LightAI" act="character" /> <!-- infected, animals -->
+        <rootclass name="Car_DZ" act="car" /> <!-- cars (sedan, hatchback, transitBus, V3S, ...) -->
+    </classes>
+</economycore>
+</syntaxhighlight>
+
+=== Default Values ===
+All variables have some hard-coded "default", for gameplay balancing, testing or mod support.
+
+<syntaxhighlight lang="xml">
+<economycore>
+    <classes>
+        ...
+    </classes>
+    <defaults>
+        <default name="world_segments" value="1" />
+        <default name="dyn_radius" value="20" />
+        <default name="dyn_smin" value="0" />
+        <default name="dyn_smax" value="0" />
+        <default name="dyn_dmin" value="0" />
+        <default name="dyn_dmax" value="5" />
+        <default name="save_events_startup" value="false" />
+        <default name="save_types_startup" value="false" />
+    </defaults>
+</economycore>
+</syntaxhighlight>
+
+{| class="wikitable"
+! Variable      !! Type !! Default !! Description
+|-
+|| world_segments
+|| Integer
+|| 12
+|| Defines how in many segments world will be split by CE - this affects save, load, cleanup and other processing events - it's performance wide for huge maps (note that default value is for Chernarus map!)
+|-
+|| backup_period 
+|| Integer
+|| 60
+|| Period of regular backup creation (minutes)
+|-
+|| backup_count 
+|| Integer
+|| 12
+|| Count of backups to keep - folders
+|-
+|| backup_startup
+|| Boolean
+|| false
+|| Process backup at startup of server
+|-
+|| dyn_radius
+|| Float
+|| 20
+|| Default value for dynamic infected zone - size of the zone (meters)
+|-
+|| dyn_smin
+|| Float
+|| 0
+|| Default value for dynamic infected zone - minimal static count
+|-
+|| dyn_smax
+|| Float
+|| 0
+|| Default value for dynamic infected zone - maximal static count
+|-
+|| dyn_dmin
+|| Float
+|| 0
+|| Default value for dynamic infected zone - minimal dynamic count
+|-
+|| dyn_dmax
+|| Float
+|| 5
+|| Default value for dynamic infected zone - maximal dynamic count
+|-
+|| save_events_startup
+|| Boolean
+|| on
+|| If disabled, no data/events.bin is created at startup (usefull for minimal hive setup)
+|-
+|| save_types_startup
+|| Boolean
+|| on
+|| If disabled, no data/types.bin is created at startup (usefull for minimal hive setup)
+|-
+|| log_hivewarning
+|| Boolean
+|| on
+|| enable/ disable some of the hive warning messages in console
+|-
+|| log_storageinfo
+|| Boolean
+|| off
+|| enable/ disable periodic storage info messages in console (if CE stores files)
+|-
+|| log_missionfilewarning
+|| Boolean
+|| on
+|| enable/ disable console warning messages about mission files (typically sandbox mode does not require them all)
+|-
+|| log_celoop
+|| Boolean
+|| off
+|| enable/ disable logging of CE loop timing and basic statistical info
+|-
+|| log_ce_dynamicevent
+|| Boolean
+|| off
+|| enable/ disable logging of CE specific - dynamic events specific
+|-
+|| log_ce_vehicle
+|| Boolean
+|| off
+|| enable/ disable logging of CE specific - vehicle specific
+|-
+|| log_ce_lootspawn
+|| Boolean
+|| off
+|| enable/ disable logging of CE specific - loot spawn specific
+|-
+|| log_ce_lootcleanup
+|| Boolean
+|| off
+|| enable/ disable logging of CE specific - cleanup specific (not just loot actually)
+|-
+|| log_ce_lootrespawn
+|| Boolean
+|| off
+|| enable/ disable logging of CE specific - loot respawn specific
+|-
+|| log_ce_statistics
+|| Boolean
+|| off
+|| enable/ disable logging of CE specific - statistical data
+|-
+|| log_ce_zombie
+|| Boolean
+|| off
+|| enable/ disable logging of CE specific - infected related
+|-
+|| log_ce_animal
+|| Boolean
+|| off
+|| enable/ disable logging of CE specific - animal related
+|}
+
+=== Persistence backups ===
+Chernarus is a large map which contains a vast amount of objects which need to be controlled by the central economy. In order to do so in a performance-friendly fashion, map is split into segments which are then individually saved in a periodic intervals. Since most of the server uptime a segment of Chernarus is in the process of being saved, a server crash or other technical difficulties may corrupt the segment and in turn compromise the persistence. For this reason, an '''automated backup system''' has been created which can be configured by the following variables of the '''cfgEconomyCore.xml''':
+  
+==== world_segments ====
+Defines the number of world segments.
+
+Default value "12" is set with a Chernarus in mind, if you are running another map with a different size/loot economy/amount of entities, you may want to adjust the amount of segments to its specifications.
+
+==== backup_period ====
+This configures how often are persistence backups created.
+
+Every X minutes, a new backup of the current persistence will be created, overriding the oldest backup based on the backup_count variable. Minimum value "15", default is "60".
+
+==== backup_count ====
+This determines the amount of kept persistence backups. 
+
+If set to "3" with a backup_period of "20", it will keep 3 backups made over period of one hour, and after 80 minutes it will override the oldest one. Default value is "12".
+
+==== backup_startup ====
+This will create backup on the server immediately after server finished load operations and initial/additional respawn.
+
+Default is "false".
