@@ -334,17 +334,6 @@
                   "quantityMax":1.0
                },
                "quickBarSlot":-1
-            },
-            {
-               "itemType":"TacticalGloves_Green",
-               "spawnWeight":1,
-               "attributes":{
-                  "healthMin":1.0,
-                  "healthMax":1.0,
-                  "quantityMin":1.0,
-                  "quantityMax":1.0
-               },
-               "quickBarSlot":-1
             }
          ]
       },
@@ -353,17 +342,6 @@
 	    {
          "slotName":"Mask",
          "discreteItemSets":[
-            {
-               "itemType":"BalaclavaMask_Green",
-               "spawnWeight":1,
-               "attributes":{
-                  "healthMin":1.0,
-                  "healthMax":1.0,
-                  "quantityMin":1.0,
-                  "quantityMax":1.0
-               },
-               "quickBarSlot":-1
-            },
             {
                "itemType":"BalaclavaMask_Black",
                "spawnWeight":1,
@@ -386,17 +364,6 @@
       {
          "slotName":"Eyewear",
          "discreteItemSets":[
-            {
-               "itemType":"AviatorGlasses",
-               "spawnWeight":1,
-               "attributes":{
-                  "healthMin":1.0,
-                  "healthMax":1.0,
-                  "quantityMin":1.0,
-                  "quantityMax":1.0
-               },
-               "quickBarSlot":-1
-            },
             {
                "itemType":"SportGlasses_Black",
                "spawnWeight":1,
@@ -550,20 +517,6 @@
                         },
                         "quickBarSlot": 3
                     },
-					 {
-                     "itemType":"PersonalRadio",
-                     "attributes":{
-                        "healthMin":1.0,
-                        "healthMax":1.0,
-                        "quantityMin":1.0,
-                        "quantityMax":1.0
-                     },
-                     "quickBarSlot": 8,
-                     "simpleChildrenUseDefaultAttributes":true,
-                     "simpleChildrenTypes":[
-                        "Battery9V"
-                     ]
-                  },
 				  {
                      "itemType":"GPSReceiver",
                      "attributes":{
@@ -578,40 +531,6 @@
                         "Battery9V"
                      ]
                   },
-				   {
-                     "itemType":"Flashlight",
-                     "attributes":{
-                        "healthMin":1.0,
-                        "healthMax":1.0,
-                        "quantityMin":1.0,
-                        "quantityMax":1.0
-                     },
-                     "quickBarSlot": -1,
-                     "simpleChildrenUseDefaultAttributes":true,
-                     "simpleChildrenTypes":[
-                        "Battery9V"
-                     ]
-                  },
-                    {
-                        "itemType": "RGD5Grenade",
-                        "attributes": {
-                            "healthMin": 1.0,
-                            "healthMax": 1.0,
-                            "quantityMin": 1.0,
-                            "quantityMax": 1.0
-                        },
-                        "quickBarSlot": -1
-                    },
-					{
-                        "itemType": "RGD5Grenade",
-                        "attributes": {
-                            "healthMin": 1.0,
-                            "healthMax": 1.0,
-                            "quantityMin": 1.0,
-                            "quantityMax": 1.0
-                        },
-                        "quickBarSlot": -1
-                    },
                     {
                         "itemType": "Pear",
                         "attributes": {
@@ -642,16 +561,6 @@
                         },
                         "quickBarSlot": -1
                     },
-					{
-                        "itemType": "TetracyclineAntibiotics",
-                        "attributes": {
-                            "healthMin": 1.0,
-                            "healthMax": 1.0,
-                            "quantityMin": 40,
-                            "quantityMax": 50
-                        },
-                        "quickBarSlot": -1
-                    },
 						{
                         "itemType": "ChernarusMap",
                         "attributes": {
@@ -671,16 +580,6 @@
                             "quantityMax": 1.0
                         },
                         "quickBarSlot": 6
-                    },
-					{
-                        "itemType": "FNX45",
-                        "attributes": {
-                            "healthMin": 1.0,
-                            "healthMax": 1.0,
-                            "quantityMin": 1.0,
-                            "quantityMax": 1.0
-                        },
-                        "quickBarSlot": 4
                     },
 					{
                         "itemType": "HuntingKnife",
