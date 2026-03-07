@@ -10,6 +10,7 @@
     "PlayerData":
 	{
 		"disablePersonalLight": false,
+		"spawnGearPresetFiles": ["custom/akm_loadout.json","custom/dmr_loadout.json","custom/m4a1_loadout.json","custom/svd_loadout.json","custom/police-loadout.json","custom/nbc-medic-loadout.json"],
 		"StaminaData":
 		{
 			"sprintStaminaModifierErc": 1.0,
