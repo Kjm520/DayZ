@@ -4,6 +4,6 @@
 # before deployment. Use {{VAR_NAME}} as the placeholder.
 # ============================================================
 
-# --- Spawn Points (Sakhal) ---
-SPAWN_X: "13900"
+# --- Spawn Points (Sakhal) --- map: 15360 x 15360
+SPAWN_X: "12500"
 SPAWN_Z: "12500"
