@@ -1,0 +1,17 @@
+
+******************************************************************************
+AdminLog started on 2026-03-07 at 16:23:08
+16:24:43 | Player "KJM52"(id=B0A1E2114BB8B79200A9B3F7F2A50C0B1373D3EE) is connected
+16:28:47 | ##### PlayerList log: 1 players
+16:28:47 | Player "KJM52" (id=B0A1E2114BB8B79200A9B3F7F2A50C0B1373D3EE pos=<12454.4, 12074.3, 126.0>)
+16:28:47 | #####
+16:32:10 | Player "KJM52" (id=B0A1E2114BB8B79200A9B3F7F2A50C0B1373D3EE pos=<13245.4, 11833.8, 3.1>)[HP: 94.7527] hit by Infected into RightArm(17) for 0 damage (Dummy_Light)
+16:33:47 | ##### PlayerList log: 1 players
+16:33:47 | Player "KJM52" (id=B0A1E2114BB8B79200A9B3F7F2A50C0B1373D3EE pos=<13634.9, 11986.1, 2.5>)
+16:33:47 | #####
+16:35:40 | Player "KJM52" (id=B0A1E2114BB8B79200A9B3F7F2A50C0B1373D3EE pos=<13727, 11908.9, 2.7>)[HP: 91.6635] hit by Infected into LeftArm(18) for 8.075 damage (MeleeSoldierInfected)
+16:35:41 | Player "KJM52" (id=B0A1E2114BB8B79200A9B3F7F2A50C0B1373D3EE pos=<13727.2, 11908.6, 2.5>)[HP: 90.6185] hit by Infected into RightArm(17) for 10.45 damage (MeleeSoldierInfectedLong)
+16:36:41 | Player "KJM52" (id=B0A1E2114BB8B79200A9B3F7F2A50C0B1373D3EE pos=<13745, 11952.2, 2.5>) performed EmoteSuicide with HuntingKnife
+16:36:50 | Player "KJM52" (DEAD) (id=B0A1E2114BB8B79200A9B3F7F2A50C0B1373D3EE pos=<13745, 11952.2, 2.5>) died. Stats> Water: 914.677 Energy: 314.173 Bleed sources: 1
+16:36:50 | Player "KJM52" (DEAD) (id=B0A1E2114BB8B79200A9B3F7F2A50C0B1373D3EE pos=<13745, 11952.2, 2.5>) committed suicide
+16:36:58 | Player "KJM52"(id=B0A1E2114BB8B79200A9B3F7F2A50C0B1373D3EE) has been disconnected
