@@ -10,7 +10,7 @@
     "PlayerData":
 	{
 		"disablePersonalLight": false,
-		"spawnGearPresetFiles": ["custom/test_loadout.json"],
+		"spawnGearPresetFiles": ["custom/loadouts/test_loadout.json"],
 		"StaminaData":
 		{
 			"sprintStaminaModifierErc": 1.0,
@@ -87,7 +87,7 @@
 	},
 	"UIData":
 	{
-		"use3DMap": false,
+		"use3DMap": true,
 		"HitIndicationData":
 		{
 			"hitDirectionOverrideEnabled": false,
@@ -104,7 +104,7 @@
 	{
 		"ignoreMapOwnership": false,
 		"ignoreNavItemsOwnership": false,
-		"displayPlayerPosition": false,
+		"displayPlayerPosition": true,
 		"displayNavInfo": true
 	},
 	"VehicleData":

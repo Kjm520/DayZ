@@ -126,7 +126,7 @@
                 Be aware that this is only checked on player log in, so it will not swap for as long as nobody is logging in.
             -->
             <group name="Zones">
-                <pos x="12000" z="12000" />
+                <pos x="13900" z="12500" />
             </group>
         </generator_posbubbles>
     </fresh>
