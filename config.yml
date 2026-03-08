@@ -6,10 +6,11 @@
 
 # --- Spawn Coordinates (Sakhal) --- map: 15360 x 15360
 
-Northeast Pier: [13915, 12525]
+Northeast Pier: ["13915", "12525"]
+Petropavlovsk Pier: ["5415", "10880"]
 
-SPAWN_X: "13915"
-SPAWN_Z: "12525"
+SPAWN_X: "5415"
+SPAWN_Z: "10880"
 
 # --- Spawn Parameters (Sakhal) ---
 
@@ -30,5 +31,10 @@ INFECTED_MAX: "200" # Default: 100
 INFECTED_LIFETIME: "3" # Default: 3
 INFECTED_RESTOCK: "0" # Default: 0
 INFECTED_SAFE_RADIUS: "100" # Default: 100
-INFECTED_DISTANCE_RADIUS: "50" # Default: 50
-INFECTED_CLEANUP_RADIUS: "100" # Default: 100
+INFECTED_DISTANCE_RADIUS: "300" # Default: 50
+INFECTED_CLEANUP_RADIUS: "300" # Default: 100
+
+
+# --- Zombie Territories ---
+
+INFECTED_ALL: "150"

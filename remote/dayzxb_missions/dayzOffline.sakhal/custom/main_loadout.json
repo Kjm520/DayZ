@@ -87,15 +87,47 @@
       "slotName": "shoulderR",
       "discreteItemSets": [
         {
-          "itemType": "BaseballBat",
-          "spawnWeight": 2,
+          "itemType": "M14",
+          "spawnWeight": 1,
           "attributes": {
             "healthMin": 0.8,
-            "healthMax": 0.8,
+            "healthMax": 1.0,
             "quantityMin": 1.0,
             "quantityMax": 1.0
           },
-          "quickBarSlot": 1
+          "quickBarSlot": 1,
+          "complexChildrenTypes": [
+            {
+              "itemType": "ReflexOptic",
+              "attributes": {
+                "healthMin": 0.9,
+                "healthMax": 0.9,
+                "quantityMin": 1.0,
+                "quantityMax": 1.0
+              },
+              "quickBarSlot": -1
+            },
+            {
+              "itemType": "Battery9V",
+              "attributes": {
+                "healthMin": 1.0,
+                "healthMax": 1.0,
+                "quantityMin": 1.0,
+                "quantityMax": 1.0
+              },
+              "quickBarSlot": -1
+            },
+            {
+              "itemType": "Mag_M14_20Rnd",
+              "attributes": {
+                "healthMin": 0.8,
+                "healthMax": 0.9,
+                "quantityMin": 1.0,
+                "quantityMax": 1.0
+              },
+              "quickBarSlot": -1
+            }
+          ]
         }
       ]
     },
@@ -103,7 +135,7 @@
       "slotName": "Vest",
       "discreteItemSets": [
         {
-          "itemType": "PlateCarrierVest",
+          "itemType": "HuntingVest_Winter",
           "spawnWeight": 1,
           "attributes": {
             "healthMin": 1.0,
@@ -111,9 +143,7 @@
             "quantityMin": 1.0,
             "quantityMax": 1.0
           },
-          "quickBarSlot": -1,
-          "simpleChildrenUseDefaultAttributes": false,
-          "simpleChildrenTypes": ["PlateCarrierHolster"]
+          "quickBarSlot": -1
         }
       ]
     },
@@ -131,7 +161,7 @@
           },
           "quickBarSlot": -1,
           "simpleChildrenUseDefaultAttributes": true,
-          "simpleChildrenTypes": ["Mag_Vikhr_30Rnd", "Mag_Vikhr_30Rnd", "Mag_Vikhr_30Rnd"]
+          "simpleChildrenTypes": ["Mag_M14_20Rnd", "Mag_M14_20Rnd", "Mag_Vikhr_30Rnd"]
         }
       ]
     },
@@ -269,7 +299,7 @@
             "quantityMin": 1.0,
             "quantityMax": 1.0
           },
-          "quickBarSlot": 3
+          "quickBarSlot": 2
         },
         {
           "itemType": "GPSReceiver",
@@ -341,31 +371,21 @@
             "quantityMin": 1.0,
             "quantityMax": 1.0
           },
-          "quickBarSlot": 5
+          "quickBarSlot": 4
         }
       ],
       "simpleChildrenUseDefaultAttributes": false,
       "simpleChildrenTypes": [
         "Heatpack",
-        "Roadflare",
         "PowderedMilk",
         "PowderedMilk",
-        "PetrolLighter",
-        "BandageDressing",
-        "AmmoBox_762x39Tracer_20Rnd",
-        "TacticalBaconCan",
-        "CanOpener",
-        "WeaponCleaningKit",
         "Canteen",
         "Epinephrine",
         "Epinephrine",
         "FlashGrenade",
-        "AlarmClock_Blue",
         "Mag_Vikhr_30Rnd",
-        "Mag_Vikhr_30Rnd",
-        "Mag_Vikhr_30Rnd",
-        "Mag_Vikhr_30Rnd",
-        "Mag_Vikhr_30Rnd",
+        "Mag_M14_20Rnd",
+        "Mag_M14_20Rnd",
         "Mag_Vikhr_30Rnd",
         "Mag_Vikhr_30Rnd",
         "Mag_Vikhr_30Rnd"
