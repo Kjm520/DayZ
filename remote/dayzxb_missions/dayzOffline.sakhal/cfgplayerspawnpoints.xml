@@ -15,21 +15,21 @@
         -->
         <spawn_params>
             <!--Minimum distance from infected in meters (weight: 2x)-->
-            <min_dist_infected>30</min_dist_infected>
+            <min_dist_infected>0</min_dist_infected>
             <!--Maximum distance from infected in meters (weight: 2x)-->
-            <max_dist_infected>70</max_dist_infected>
+            <max_dist_infected>500</max_dist_infected>
             <!--Minimum distance from players in meters (weight: 3x)-->
-            <min_dist_player>65</min_dist_player>
+            <min_dist_player>0</min_dist_player>
             <!--Maximum distance from players in meters (weight: 3x)-->
-            <max_dist_player>150</max_dist_player>
+            <max_dist_player>500</max_dist_player>
             <!--Minimum distance from static objects in meters (weight: 1x)-->
             <min_dist_static>0</min_dist_static>
             <!--Maximum distance from static objects in meters (weight: 1x)-->
-            <max_dist_static>2</max_dist_static>
+            <max_dist_static>500</max_dist_static>
             <!--Minimum distance from static objects in meters (weight: 6x)-->
-            <min_dist_trigger>50</min_dist_trigger>
+            <min_dist_trigger>0</min_dist_trigger>
             <!--Maximum distance from static objects in meters (weight: 6x)-->
-            <max_dist_trigger>100</max_dist_trigger>
+            <max_dist_trigger>500</max_dist_trigger>
         </spawn_params>
         <!--
             Spawn points are generated around <pos> child elements under the <generator_posbubbles> element.
@@ -72,31 +72,31 @@
                 Width of each area is exactly width / density.
                 Height of each area is exactly height / density.
             -->
-            <grid_density>8</grid_density>
+            <grid_density>10</grid_density>
             <!--Total width of grid in metres (1 - 4096)-->
-            <grid_width>100</grid_width>
+            <grid_width>300</grid_width>
             <!--Total height of grid in metres (1 - 4096)-->
-            <grid_height>100</grid_height>
+            <grid_height>300</grid_height>
             <!--
                 Minimum distance from static objects
                 (points below this will be discarded during binarisation)
             -->
-            <min_dist_static>3</min_dist_static>
+            <min_dist_static>0</min_dist_static>
             <!--
                 Maximum distance from static objects
                 (points above this will just be less likely than those within the range)
             -->
-            <max_dist_static>10</max_dist_static>
+            <max_dist_static>100</max_dist_static>
             <!--
                 Minimum terrain slope limit in degrees
                 (points not within range will be discarded during binarisation)
             -->
-            <min_steepness>-30</min_steepness>
+            <min_steepness>-60</min_steepness>
             <!--
                 Maximum terrain slope limit in degrees
                 (points not within range will be discarded during binarisation)
             -->
-            <max_steepness>30</max_steepness>
+            <max_steepness>60</max_steepness>
         </generator_params>
         <!--Parameters controlling group spawning behaviour-->
         <group_params>
