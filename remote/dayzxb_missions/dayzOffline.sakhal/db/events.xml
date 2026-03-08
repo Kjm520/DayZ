@@ -55,9 +55,9 @@
         </children>
     </event>
     <event name="AnimalBear">
-        <nominal>5</nominal>
+        <nominal>30</nominal>
         <min>3</min>
-        <max>3</max>
+        <max>50</max>
         <lifetime>180</lifetime>
         <restock>0</restock>
         <saferadius>200</saferadius>
@@ -222,7 +222,7 @@
     <event name="AnimalWolf">
         <nominal>8</nominal>
         <min>5</min>
-        <max>8</max>
+        <max>12</max>
         <lifetime>180</lifetime>
         <restock>0</restock>
         <saferadius>200</saferadius>
@@ -238,8 +238,8 @@
         </children>
     </event>
     <event name="InfectedArmy">
-        <nominal>50</nominal>
-        <min>25</min>
+        <nominal>100</nominal>
+        <min>50</min>
         <max>250</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
@@ -294,10 +294,10 @@
         </children>
     </event>
     <event name="InfectedCity">
-        <nominal>50</nominal>
-        <min>25</min>
-        <max>250</max>
-        <lifetime>3</lifetime>
+        <nominal>200</nominal>
+        <min>100</min>
+        <max>500</max>
+        <lifetime>10</lifetime>
         <restock>0</restock>
         <saferadius>100</saferadius>
         <distanceradius>50</distanceradius>

@@ -11,7 +11,8 @@
       "Bash(attrib +R * /S /D)",
       "Bash(powershell -Command \"Get-ChildItem -Path ''c:\\\\Users\\\\kjm52\\\\DEV\\\\Games\\\\DayZ\\\\DEFAULT'' -Recurse -File | ForEach-Object { $_IsReadOnly = $true }\")",
       "Bash(powershell -Command \"Get-ChildItem -Path ''c:\\\\Users\\\\kjm52\\\\DEV\\\\Games\\\\DayZ\\\\DEFAULT'' -Recurse -File | ForEach-Object { Set-ItemProperty -Path $_.FullName -Name IsReadOnly -Value $true }\")",
-      "Bash(powershell -ExecutionPolicy Bypass -File \"c:\\\\Users\\\\kjm52\\\\DEV\\\\Games\\\\DayZ\\\\set-readonly.ps1\")"
+      "Bash(powershell -ExecutionPolicy Bypass -File \"c:\\\\Users\\\\kjm52\\\\DEV\\\\Games\\\\DayZ\\\\set-readonly.ps1\")",
+      "Bash(python scripts/types_to_csv.py)"
     ]
   }
 }
