@@ -6,9 +6,10 @@
 
 # --- Spawn Coordinates (Sakhal) --- map: 15360 x 15360
 
+Northeast Pier: [13915, 12525]
+
 SPAWN_X: "13915"
 SPAWN_Z: "12525"
-
 
 # --- Spawn Parameters (Sakhal) ---
 
@@ -20,3 +21,14 @@ MIN_DIST_STATIC: "0"
 MAX_DIST_STATIC: "400"
 MIN_DIST_TRIGGER: "0"
 MAX_DIST_TRIGGER: "400"
+
+# --- Infected Spawn Parameters (Sakhal) (Defaults varied so most common is listed below) ---
+
+INFECTED_NOMINAL: "100" # Default: 50
+INFECTED_MIN: "50" # Default: 25
+INFECTED_MAX: "200" # Default: 100
+INFECTED_LIFETIME: "3" # Default: 3
+INFECTED_RESTOCK: "0" # Default: 0
+INFECTED_SAFE_RADIUS: "100" # Default: 100
+INFECTED_DISTANCE_RADIUS: "50" # Default: 50
+INFECTED_CLEANUP_RADIUS: "100" # Default: 100
