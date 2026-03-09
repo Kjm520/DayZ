@@ -15,21 +15,21 @@
         -->
         <spawn_params>
             <!--Minimum distance from infected in meters (weight: 2x)-->
-            <min_dist_infected>{{MIN_DIST_INFECTED}}</min_dist_infected>
+            <min_dist_infected>{{MIN_DIST}}</min_dist_infected>
             <!--Maximum distance from infected in meters (weight: 2x)-->
-            <max_dist_infected>{{MAX_DIST_INFECTED}}</max_dist_infected>
+            <max_dist_infected>{{MAX_DIST}}</max_dist_infected>
             <!--Minimum distance from players in meters (weight: 3x)-->
-            <min_dist_player>{{MIN_DIST_PLAYER}}</min_dist_player>
+            <min_dist_player>{{MIN_DIST}}</min_dist_player>
             <!--Maximum distance from players in meters (weight: 3x)-->
-            <max_dist_player>{{MAX_DIST_PLAYER}}</max_dist_player>
+            <max_dist_player>{{MAX_DIST}}</max_dist_player>
             <!--Minimum distance from static objects in meters (weight: 1x)-->
-            <min_dist_static>{{MIN_DIST_STATIC}}</min_dist_static>
+            <min_dist_static>{{MIN_DIST}}</min_dist_static>
             <!--Maximum distance from static objects in meters (weight: 1x)-->
-            <max_dist_static>{{MAX_DIST_STATIC}}</max_dist_static>
+            <max_dist_static>{{MAX_DIST}}</max_dist_static>
             <!--Minimum distance from static objects in meters (weight: 6x)-->
-            <min_dist_trigger>{{MIN_DIST_TRIGGER}}</min_dist_trigger>
+            <min_dist_trigger>{{MIN_DIST}}</min_dist_trigger>
             <!--Maximum distance from static objects in meters (weight: 6x)-->
-            <max_dist_trigger>{{MAX_DIST_TRIGGER}}</max_dist_trigger>
+            <max_dist_trigger>{{MAX_DIST}}</max_dist_trigger>
         </spawn_params>
         <!--
             Spawn points are generated around <pos> child elements under the <generator_posbubbles> element.

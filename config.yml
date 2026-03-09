@@ -9,32 +9,46 @@
 Northeast Pier: ["13915", "12525"]
 Petropavlovsk Pier: ["5415", "10880"]
 
-SPAWN_X: "5415"
-SPAWN_Z: "10880"
+SPAWN_X: "13915"
+SPAWN_Z: "12525"
 
 # --- Spawn Parameters (Sakhal) ---
 
-MIN_DIST_INFECTED: "0"
-MAX_DIST_INFECTED: "400"
-MIN_DIST_PLAYER: "0"
-MAX_DIST_PLAYER: "400"
-MIN_DIST_STATIC: "0"
-MAX_DIST_STATIC: "400"
-MIN_DIST_TRIGGER: "0"
-MAX_DIST_TRIGGER: "400"
+MIN_DIST: "0"
+MAX_DIST: "400"
 
 # --- Infected Spawn Parameters (Sakhal) (Defaults varied so most common is listed below) ---
 
-INFECTED_NOMINAL: "100" # Default: 50
-INFECTED_MIN: "50" # Default: 25
-INFECTED_MAX: "200" # Default: 100
-INFECTED_LIFETIME: "3" # Default: 3
-INFECTED_RESTOCK: "0" # Default: 0
-INFECTED_SAFE_RADIUS: "100" # Default: 100
-INFECTED_DISTANCE_RADIUS: "300" # Default: 50
-INFECTED_CLEANUP_RADIUS: "300" # Default: 100
-
+#INFECTED_LIFETIME: "3" # Default: 3
+#INFECTED_RESTOCK: "0" # Default: 0
+#INFECTED_SAFE_RADIUS: "100" # Default: 100
+#INFECTED_DISTANCE_RADIUS: "300" # Default: 50
+#INFECTED_CLEANUP_RADIUS: "300" # Default: 100
 
 # --- Zombie Territories ---
 
-INFECTED_ALL: "150"
+# Per-type D multipliers. Final value = dmin/dmax * INFECTED_GLOBAL_D_MULTIPLIER * <Type>_D_MULTIPLIER
+# Set to 1.0 for no change relative to global. Zero values in the XML are always preserved.
+# INFECTED_ALL_RADIUS: "150"
+INFECTED_GLOBAL_D_MULTIPLIER: 2.0
+
+InfectedCityTier1_D_MULTIPLIER: 1.0
+InfectedVillage_D_MULTIPLIER: 1.0
+InfectedArmy_D_MULTIPLIER: 1.0
+InfectedFirefighter_D_MULTIPLIER: 1.0
+InfectedScientist_D_MULTIPLIER: 1.0
+InfectedIndustrial_D_MULTIPLIER: 1.0
+InfectedPrisoner_D_MULTIPLIER: 1.0
+InfectedReligious_D_MULTIPLIER: 1.0
+InfectedMedic_D_MULTIPLIER: 1.0
+InfectedArmyHeavy_D_MULTIPLIER: 1.0
+InfectedVillageTier1_D_MULTIPLIER: 1.0
+InfectedPoliceHard_D_MULTIPLIER: 1.0
+InfectedCity_D_MULTIPLIER: 1.0
+
+
+
+
+
+
+

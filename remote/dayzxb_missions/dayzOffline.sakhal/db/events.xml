@@ -55,9 +55,9 @@
         </children>
     </event>
     <event name="AnimalBear">
-        <nominal>30</nominal>
+        <nominal>5</nominal>
         <min>3</min>
-        <max>50</max>
+        <max>3</max>
         <lifetime>180</lifetime>
         <restock>0</restock>
         <saferadius>200</saferadius>
@@ -222,7 +222,7 @@
     <event name="AnimalWolf">
         <nominal>8</nominal>
         <min>5</min>
-        <max>12</max>
+        <max>8</max>
         <lifetime>180</lifetime>
         <restock>0</restock>
         <saferadius>200</saferadius>
@@ -238,14 +238,14 @@
         </children>
     </event>
     <event name="InfectedArmy">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>250</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>player</position>
         <limit>custom</limit>
@@ -258,14 +258,14 @@
         </children>
     </event>
     <event name="InfectedArmyHeavy">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>250</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="0"/>
         <position>player</position>
         <limit>custom</limit>
@@ -275,14 +275,14 @@
         </children>
     </event>
     <event name="InfectedBonfire">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>250</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>5</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <secondary>InfectedArmy</secondary>
         <flags deletable="0" init_random="0" remove_damaged="0"/>
         <position>player</position>
@@ -294,14 +294,14 @@
         </children>
     </event>
     <event name="InfectedCity">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
-        <lifetime>10</lifetime>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>250</max>
+        <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>player</position>
         <limit>custom</limit>
@@ -339,14 +339,14 @@
         </children>
     </event>
     <event name="InfectedCityTier1">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>250</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>player</position>
         <limit>custom</limit>
@@ -363,14 +363,14 @@
         </children>
     </event>
     <event name="InfectedFirefighter">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>100</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>player</position>
         <limit>custom</limit>
@@ -381,14 +381,14 @@
         </children>
     </event>
     <event name="InfectedIndustrial">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>100</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>player</position>
         <limit>custom</limit>
@@ -423,14 +423,14 @@
         </children>
     </event>
     <event name="InfectedMedic">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>100</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>player</position>
         <limit>custom</limit>
@@ -456,14 +456,14 @@
         </children>
     </event>
     <event name="InfectedNBC">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>250</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>player</position>
         <limit>custom</limit>
@@ -473,14 +473,14 @@
         </children>
     </event>
     <event name="InfectedNBCYellow">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>250</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>player</position>
         <limit>custom</limit>
@@ -490,14 +490,14 @@
         </children>
     </event>
     <event name="InfectedPolice">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>100</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>player</position>
         <limit>custom</limit>
@@ -510,14 +510,14 @@
         </children>
     </event>
     <event name="InfectedPoliceHard">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>100</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>player</position>
         <limit>custom</limit>
@@ -528,14 +528,14 @@
         </children>
     </event>
     <event name="InfectedPrisoner">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>100</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>player</position>
         <limit>custom</limit>
@@ -545,14 +545,14 @@
         </children>
     </event>
     <event name="InfectedReligious">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>100</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>player</position>
         <limit>custom</limit>
@@ -562,14 +562,14 @@
         </children>
     </event>
     <event name="InfectedSanta">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>250</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>player</position>
         <limit>custom</limit>
@@ -579,14 +579,14 @@
         </children>
     </event>
     <event name="InfectedScientist">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>250</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>player</position>
         <limit>custom</limit>
@@ -596,14 +596,14 @@
         </children>
     </event>
     <event name="InfectedSolitude">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>100</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>player</position>
         <limit>custom</limit>
@@ -627,14 +627,14 @@
         </children>
     </event>
     <event name="InfectedVillage">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>100</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>player</position>
         <limit>custom</limit>
@@ -664,14 +664,14 @@
         </children>
     </event>
     <event name="InfectedVillageTier1">
-        <nominal>{{INFECTED_NOMINAL}}</nominal>
-        <min>{{INFECTED_MIN}}</min>
-        <max>{{INFECTED_MAX}}</max>
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>100</max>
         <lifetime>3</lifetime>
         <restock>0</restock>
-        <saferadius>{{INFECTED_SAFE_RADIUS}}</saferadius>
-        <distanceradius>{{INFECTED_DISTANCE_RADIUS}}</distanceradius>
-        <cleanupradius>{{INFECTED_CLEANUP_RADIUS}}</cleanupradius>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>player</position>
         <limit>custom</limit>
